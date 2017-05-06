@@ -20,6 +20,14 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+###config/database.yml
+
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database:
+  host:
+  port:
+  username:
+  password: 
